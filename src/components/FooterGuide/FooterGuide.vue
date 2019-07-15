@@ -18,7 +18,7 @@
       </span>
       <span>订单</span>
     </span>
-    <span  class="guide_item":class="{on: '/profile'===$route.path}" @click="goTo('/profile')">
+    <span  class="guide_item" :class="{on: '/profile'===$route.path}" @click="goTo('/profile')">
       <span class="item_icon">
         <i class="iconfont icon-geren"></i>
       </span>
@@ -29,8 +29,8 @@
 
 <script>
 export default {
-  methods:{
-    goTo(path) {
+  methods: {
+    goTo (path) {
       this.$router.replace(path)
     }
   }

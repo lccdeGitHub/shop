@@ -14,7 +14,7 @@
 <script>
 import HeaderTop from '../../components/HeaderTop/HeaderTop'
 export default {
-  components:{
+  components: {
     HeaderTop
   }
 }

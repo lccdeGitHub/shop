@@ -5,6 +5,9 @@
 /*
 与后台交互模块
  */
+/*
+与后台交互模块
+ */
 import ajax from './ajax'
 
 /**
@@ -44,7 +47,7 @@ export const pwdLogin = (name, pwd, captcha) => ajax('/api/login_pwd', {
 /**
  * 发送短信验证码
  */
-export const sendCode = phone => ajax('/api/sendcode', {phone})
+export const sendCode = phone => ajax('/api/sendCode', {phone})
 
 /**
  * 手机号验证码登录
@@ -64,14 +67,14 @@ export const reqLogout = () => ajax('/api/logout')
 /**
  * 获取商家信息
  */
-export const reqShopInfo = () => ajax('/shop_info')
+export const reqShopInfo = () => ajax('/info')
 
 /**
  * 获取商家评价数组
  */
-export const reqShopRatings = () => ajax('/shop_ratings')
+export const reqShopRatings = () => ajax('/ratings')
 
 /**
  * 获取商家商品数组
  */
-export const reqShopGoods = () => ajax('/shop_goods')
+export const reqShopGoods = () => ajax('/goods')
